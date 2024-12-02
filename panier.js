@@ -60,13 +60,13 @@
                 row.innerHTML = `
                     <td><img src="${item.image}" alt="${item.name}" width="50"></td>
                     <td>${item.name}</td>
-                    <td>${item.price}€</td>
+                    <td>${item.price} DH</td>
                     <td>
                         <button class="button" onclick="updateQuantity('${item.name}', -1)">-</button>
                         ${item.quantity}
                         <button class="button" onclick="updateQuantity('${item.name}', 1)">+</button>
                     </td>
-                    <td>${item.totalPrice}€</td>
+                    <td>${item.totalPrice} DH</td>
                     <td>
                         <button class="button" class="remove-btn" onclick="removeFromCart('${item.name}')">Supprimer</button>
                     </td>
