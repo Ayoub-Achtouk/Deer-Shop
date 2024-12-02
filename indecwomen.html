@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Logo</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="deershop.jfif" alt="Logo du site">
+                <span class="site-name">DeerShop</span>
+            </div>
+        <div class="search-container">
+            <form action="/search" method="GET">
+                <input type="text" name="q" class="search-input" placeholder="Rechercher...">
+                <button type="submit" class="search-button">🔍</button>
+            </form>
+        </div>
+        </nav>
+        <ul>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="drop-btn">Accueil</a>
+                <div class="dropdown-content">
+                    <a href="index.html">Homme</a>
+                    <a href="paniert.html">Paniert</a>
+                </div>
+            </li>
+            <li class="dropdown"> 
+                <a href="javascript:void(0)" class="drop-btn">A propos</a>
+                <div class="dropdown-content">
+                    <a href="#">Notre mission</a>
+                    <a href="#">Nous contacter</a>
+                    <a href="#">Questions fréquentes </a>
+                </div>
+            </li>
+            <li class="dropdown"><a href="indexmen.html" class="drop-btn">Homme</a></li>
+            <li class="dropdown"><a href="indecwomen.html" class="drop-btn">Femme</a></li> 
+            <li style="float:right;"><a href="connecter.html" class="active">Se connecter</a>
+            <li style="float:right;"><a href="inscrire.html" class="active">S'inscrire</a>
+        </ul>
+    </header>
+    <section class="products">
+        <div class="dropdownTT">
+			<img class="dropdown-img" src="prowomen2.jfif"/>
+  			<div class="dropdownTT-content" style="top:0;">
+                <img src="prowomen2.jfif"/>
+                <div class="product" id="product5">
+                    <h3>Produit 5</h3>
+                    <p>Prix: 20 DH</p>
+                    <button onclick="addToCart('Produit 5', 20,'prowomen2.jfif')">Ajouter au panier</button>
+                </div>
+  			</div>
+		</div>
+        <div class="dropdownTT">
+			<img class="dropdown-img" src="prowomen3.jfif"/>
+  			<div class="dropdownTT-content" style="top:0;">
+                <img src="prowomen3.jfif"/>
+                <div class="product" id="product6">
+                    <h3>Produit 6</h3>
+                    <p>Prix: 20 DH</p>
+                    <button onclick="addToCart('Produit 6', 20,'prowomen3.jfif')">Ajouter au panier</button>
+                </div>
+  			</div>
+		</div>
+        <div class="dropdownTT">
+			<img class="dropdown-img" src="prowomen9.jfif"/>
+  			<div class="dropdownTT-content" style="top:0;">
+                <img src="prowomen9.jfif"/>
+                <div class="product" id="product7">
+                    <h3>Produit 7</h3>
+                    <p>Prix: 20 DH</p>
+                    <button onclick="addToCart('Produit 7', 20,'prowomen9.jfif')">Ajouter au panier</button>
+                </div>
+  			</div>
+		</div>
+        <div class="dropdownTT">
+			<img class="dropdown-img" src="prowomen10.jfif"/>
+  			<div class="dropdownTT-content" style="top:0;">
+                <img src="prowomen10.jfif"/>
+                <div class="product" id="product8">
+                    <h3>Produit 8</h3>
+                    <p>Prix: 20 DH</p>
+                    <button onclick="addToCart('Produit 8', 20,'prowomen10.jfif')">Ajouter au panier</button>
+                </div>
+  			</div>
+		</div>
+    </section>
+    <script src="produit.js"></script>
+</body>
+</html>

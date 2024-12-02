@@ -1,0 +1,376 @@
+body {
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #282a35;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+ 
+li a:hover:not(.active) {
+    background-color: black;
+}
+
+.active {
+    background-color: darkcyan;
+}
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 140px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a:hover {
+    color: white;
+    background-color: cadetblue;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+.search-container {
+    float: right; 
+    margin: 8px; 
+}
+
+.search-input {
+    padding: 6px 100px 6px 2px;
+    border: none;
+    border-radius: 4px; 
+    text-align: left;
+}
+
+.search-button {
+    padding: 8px 10px;
+    border: none;
+    background-color: darkcyan; 
+    color: white;
+    cursor: pointer;
+    border-radius: 4px; 
+}
+.logo {
+    display: flex;
+    align-items: center; /* Centrer verticalement le logo et le nom */
+}
+
+.logo img {
+    height: 50px; /* Ajustez la hauteur selon vos besoins */
+    margin-right: 10px; /* Espacement entre le logo et le nom */
+    border-radius: 100%;
+}
+
+.site-name {
+    font-size: 24px; /* Taille du texte pour le nom du site */
+    font-weight: bold; /* Met le nom en gras */
+    color: white; /* Couleur du texte */
+}
+.container {
+    position: relative;
+  }
+  
+  .center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 60px;
+  }
+  
+  .imgbody { 
+    width: 100%;
+    height: auto;
+    opacity: 1;
+  }
+  /*(((((((((((((((((((((*/
+  /*body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}*/
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.section {
+    flex: 1;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+}
+
+.men {
+    background-image: url('men.jpg');
+}
+
+.women {
+    background-image: url('women.jpg');
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    transition: background 0.3s ease;
+}
+.overlay:hover {
+    background: rgba(0, 0, 0, 0.7);
+
+}
+/* la page de men*/
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.cart {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+/*yyyyyyyyyyyyyyy*/
+.dropdownTT {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-img {
+    width: 200px;
+    height: 300px;
+    cursor: pointer;
+}
+
+.dropdownTT-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 240px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+.dropdownTT-content img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.dropdownTT:hover .dropdownTT-content {
+    display: block;
+}
+/* tttttttttttttttttt*/
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.product {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.cart {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+/*panier*/
+h1, h2 {
+    color: #444;
+    margin: 10px;
+}
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+th, td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 10px;
+}
+th {
+    background-color: #282a35;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #e9ecef;
+}
+#total-price {
+    font-weight: bold;
+    color: #007BFF;
+    font-size: 18px;
+}
+.button {
+    background-color: #282a35;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.button:hover{
+   
+    background-color: black;
+}
+/*se Connecter et S'inscrire */
+
+.form-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #282a35;
+}
+
+.button1 {
+    width: 100%;
+    padding: 10px;
+    background-color: #282a35;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+.button1:hover {
+    background-color: black;
+}
+

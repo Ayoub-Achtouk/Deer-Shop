@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website with Logo</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="deershop.jfif" alt="Logo du site">
+                <span class="site-name">DeerShop</span>
+            </div>
+        <div class="search-container">
+            <form action="/search" method="GET">
+                <input type="text" name="q" class="search-input" placeholder="Rechercher...">
+                <button type="submit" class="search-button">🔍</button>
+            </form>
+        </div>
+        </nav>
+        <ul>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="drop-btn">Accueil</a>
+                <div class="dropdown-content">
+                    <a href="index.html">Homme</a>
+                    <a href="paniert.html">Paniert</a>
+                </div>
+            </li>
+            <li class="dropdown"> 
+                <a href="javascript:void(0)" class="drop-btn">A propos</a>
+                <div class="dropdown-content">
+                    <a href="#">Notre mission</a>
+                    <a href="#">Nous contacter</a>
+                    <a href="#">Questions fréquentes </a>
+                </div>
+            </li>
+            <li class="dropdown"><a href="indexmen.html" taeget="_blanck"   class="drop-btn">Homme</a></li>
+            <li class="dropdown"><a href="indecwomen.html" class="drop-btn">Femme</a></li> 
+            <li style="float:right;"><a href="connecter.html" class="active">Se connecter</a>
+            <li style="float:right;"><a href="inscrire.html" class="active">S'inscrire</a>
+        </ul>
+    </header>
+    <div class="form-container">
+        <h2>Connexion</h2>
+        <form>
+            <div class="form-group">
+                <label for="email">Adresse e-mail</label>
+                <input type="email"  name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Mot de passe</label>
+                <input type="password"  name="password" required>
+            </div>
+            <div class="form-group">
+                <button class="button1" type="submit">Se connecter</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
