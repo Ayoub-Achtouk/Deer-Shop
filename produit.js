@@ -20,4 +20,5 @@ function addToCart(productName, productPrice, productImage) {
 
     // Sauvegarder le panier dans localStorage
     localStorage.setItem('cart', JSON.stringify(cart));
+    alert(`${productName} a été ajouté au panier.`);
 }
