@@ -1,8 +1,7 @@
-function addToCart(productName, productPrice, productImage) {
-    // Charger le panier depuis localStorage
+function addToCart(productName, productPrice, productImage) { 
+    
     let cart = JSON.parse(localStorage.getItem('cart')) || [];
 
-    // Vérifier si le produit existe déjà dans le panier
     const existingProduct = cart.find(item => item.name === productName);
 
     if (existingProduct) {
@@ -17,8 +16,7 @@ function addToCart(productName, productPrice, productImage) {
             image: productImage
         });
     }
-
-    // Sauvegarder le panier dans localStorage
+    
     localStorage.setItem('cart', JSON.stringify(cart));
     alert(`${productName} a été ajouté au panier.`);
 }
